@@ -7,7 +7,7 @@ public class Main {
                 {{"11", "t", "3", "8"},
                  {"1", "s1", "2", "2"},
                  {"1", "r1", "2", "3"},
-                 {"h", "1", "5", "12"}};
+                 {"h", "1", "5", "1"}};
         try {
            calcManrix (data);
        } catch (MyArraySizeException e) {

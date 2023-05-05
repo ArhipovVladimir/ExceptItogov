@@ -1,2 +1,8 @@
-package PACKAGE_NAME;public class MyArrayDataException {
+public class MyArrayDataException extends NumberFormatException{
+    public MyArrayDataException ()
+    {
+
+
+    }
+
 }

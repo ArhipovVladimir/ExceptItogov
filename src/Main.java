@@ -2,10 +2,10 @@ public class Main {
     public static void main(String[] args) {
         String[][] data;
         data = new String[][]
-                {{"11", "t", "3", "8"},
+                {{"11", "1", "3", "8"},
                         {"1", "1", "2", "2"},
                         {"1", "1", "2", "3"},
-                        {"15", "1", "5", "1"}};
+                        {"л", "1", "5", "1"}};
         int res = 0;
         try {
             res = calcManrix(data);
@@ -35,9 +35,9 @@ public class Main {
             for (int j = 0; j < matrix[i].length; j++) {
                 try {
                     val = Integer.parseInt(matrix[i][j]);
-                } catch (MyArrayDataException e)
-                {e.printStackTrace();
-                System.out.println(i + " " + j);}
+                } catch (NumberFormatException e) {
+                    throw new MyArrayDataException(i, j);
+                }
 
                 sum += val;
             }
